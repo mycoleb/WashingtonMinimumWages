@@ -114,7 +114,7 @@ def create_wa_minimum_wage_map():
     padding: 10px; border-radius: 5px;">
     <b>Minimum Wage (CAD/hour)</b> <br>
     <i style="background: #ffd700; width: 15px; height: 15px; display: inline-block;"></i> King County: 30.09 <br>
-    <i style="background: #f5c855; width: 15px; height: 15px; display: inline-block;"></i> Whatcom County: 26.54 (starting May 1st) <br>
+    <i style="background: #f5c855; width: 15px; height: 15px; display: inline-block;"></i> Whatcom County: 26.54 (starting May 1st (only in Bellingham)) <br>
     <i style="background: #ffeeba; width: 15px; height: 15px; display: inline-block;"></i> All other counties: 23.70
     </div>
     '''
