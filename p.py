@@ -76,7 +76,7 @@ def create_wa_minimum_wage_map():
 
     # Add descriptive wage text
     counties_gdf['min_wage_cad'] = counties_gdf['min_wage_numeric'].astype(str) + " Canadian Dollars an hour"
-    counties_gdf.loc[counties_gdf['NAME'] == 'Whatcom', 'min_wage_cad'] += " starting May 1st"
+    counties_gdf.loc[counties_gdf['NAME'] == 'Whatcom', 'min_wage_cad'] += "(only in Bellingham) starting May 1st"
 
     # Create the interactive map
     m = folium.Map(location=[47.5, -120.5], zoom_start=7, tiles='CartoDB positron')
@@ -123,6 +123,7 @@ def create_wa_minimum_wage_map():
     # Add a title
     title_html = '''
     <h3 align="center" style="font-size:20px"><b>Minimum Wage by County in Washington State (CAD)</b></h3>
+    <p align="center" style="font-size:14px">Minimum wage is set by specific cities so this only shows the highest city minimum wage for each county</p>
     <p align="center" style="font-size:14px">All Counties in Gold Shades - Richer Counties in Darker Gold</p>
     '''
     m.get_root().html.add_child(folium.Element(title_html))
